@@ -9,6 +9,10 @@ body {
   *{
     outline: none;
   }
+
+  *{
+    font-family: 'Rubik', sans-serif !important;
+    }
   /* ----------------------------------------- */
   
   /* ALL PAGE */

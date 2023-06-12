@@ -5,6 +5,10 @@ body {
   margin: 0;
   padding: 0;
 }
+
+*{
+	font-family: 'Rubik', sans-serif !important;
+  }
 hr {
   border: 1px solid #00538E;
   width: 90%;
@@ -326,36 +330,26 @@ h2{
 
 /* MAIN */
 
-.toolbar {
+.calendar-main{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  justify-content: space-evenly;
 }
 
-.calendar__week,
-.calendar__header {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+.calendar-main .auto-jsCalendar{
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
-.calendar__week {
-  grid-auto-rows: 100px;
-  text-align: right;
+.calendar-main img{
+  margin-bottom: 5%;
+  user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
-
-.calendar__header {
-  grid-auto-rows: 50px;
-  align-items: center;
-  text-align: center;
-}
-
-.calendar__day {
-  padding: 16px;
-}
-
-
-
 
 /* COSMETIC STYLING */
 
@@ -691,6 +685,10 @@ main .sidebar {
     width: 100% !important;
   }
 
+  .calendar-main .auto-jsCalendar{
+    margin: 0;
+  }
+
   .sidebar-logo{
     display: flex;
     align-items: center;
@@ -814,8 +812,14 @@ main .sidebar {
     border-left: 4px solid var(--red);
     box-shadow: inset 10px 0px 17px -13px var(--red);
   }
+
 }
 
+@media (max-width:700px) {
+  .calendar-main img{
+    display: none;
+  }
+}
 
 
 @media (max-width:1100px) {
