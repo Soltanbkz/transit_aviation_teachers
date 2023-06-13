@@ -468,11 +468,11 @@ function CalendarApp(date) {
       return _hour + ":" + _min;
       
     }
-  
+
     if (options.indexOf(input) === -1) {
       return options[0];
     }
-    
+
     return input;
   };
   CalendarApp.prototype.resetAddEventBox = function(){

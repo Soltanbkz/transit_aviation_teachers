@@ -120,7 +120,6 @@ a {
   font-size: 100%;
 }
 
-
 .side_bar_courses {
   display: flex;
   align-items: center;
@@ -358,9 +357,9 @@ h2{
 }
 
 .calendar{
-  color: #fff;
+  color: hsl(0, 0%, 70%);
   margin: 10px auto;
-  background: #04b6e2;
+  background: #ffffff;
   padding: 60px 40px 80px 40px;
   width: 85%;
   border-radius: 5px;
@@ -371,6 +370,7 @@ h2{
 .calendar__title{
   text-align: center;
 }
+
 .calendar--day-view{
   position: absolute;
   border-radius: 3px;
