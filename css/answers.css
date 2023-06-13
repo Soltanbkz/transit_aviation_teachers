@@ -444,9 +444,15 @@ input:-webkit-autofill:active {
     margin-right: 2%;
 }
     .file {
+        display: flex;
+        align-items: center;
         margin-left: 3%;
         margin-top: 3%;
         margin-bottom: 5%;
+    }
+
+    .file img{
+        margin-bottom: 10px;
     }
 .reply form{
     display: flex;

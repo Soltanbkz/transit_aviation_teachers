@@ -540,6 +540,7 @@ form h2{
     .input{
         width: 200px !important;
     }
+
     .security-support{
         display: grid;
         justify-content: center;
@@ -556,9 +557,16 @@ form h2{
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+@media (max-width:400px) {
+  .m-r{
+    margin-left: -10%;
+    width: 120%;
   }
-  
-  @media (max-width:600px) {
+}
+
+@media (max-width:600px) {
     .ham {
         display: block;
     }
@@ -599,7 +607,7 @@ form h2{
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px 2px 20px rgba(0, 0, 0, 0.08);
       z-index: 99999;
     }
-  
+
     .all_page .content {
       margin-top: 80px;
       background-color: white;

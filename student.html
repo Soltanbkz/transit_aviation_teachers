@@ -115,7 +115,7 @@
                 </svg>                
             <p class="side_bar_text"><a href="profileSettingsAdmin.html">Настройки</a></p>
           </div>
-
+          
           <div class="side_bar_timeTable">
             
           <img class="side_bar_img" src="" alt="">
@@ -123,6 +123,7 @@
           
     <p class="side_bar_text"><a href="timeTableAdmin.html">Расписание</a></p>
           </div>
+
           <div class="side_bar_answers">
             <svg class="side_bar_img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_624_16312)">
@@ -136,6 +137,7 @@
                 </svg>                
             <p class="side_bar_text"><a href="answers.html">Лента ответов</a></p>
           </div>
+
       </div>
 
       <!-- support-img -->
@@ -202,8 +204,6 @@
     </a>
   </div>
 
-
-
     <!-- -->
     <div class="content">
 
@@ -241,15 +241,14 @@
           </div>
         </div>
 
-        <div class="expandable" style="margin-right: 35px;">
-           <select name="" id="">
-              <option value="">Добавить студента</option>
+        <div class="expandable d-n" style="margin-right: 35px;">
+            <select onchange="window.location.href = this.options[this.selectedIndex].value">
               <option value="">Добавить нескольких</option>
               <option value="">Импортировать из csv</option>
+              <option value="addStudent.html">Добавить студента</option>
             </select>
           </div>
-       </div>      
-      
+       </div>
 
       <!-- Главная -->
 
