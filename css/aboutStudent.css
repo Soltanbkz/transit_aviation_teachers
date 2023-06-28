@@ -578,7 +578,7 @@ a {
 	}
 	
 	.data-content{
-		width: 200px;
+		width: 250px;
 	}
 	
 }
@@ -588,6 +588,10 @@ a {
 	}
 	.side_bar_links{
 	  display: none;
+	}
+
+	.btn{
+		margin-right: 10px;
 	}
   
 	.side_bar{
@@ -718,12 +722,7 @@ a {
 		flex-direction: column;
 	}
 	.lastbtn {
-		position: relative;
-		left: 0;
-		right: 10%;
-		margin-right: 18%;
-		white-space: nowrap;
-		padding-right: 90px;
+		margin-right: 50px;
 	}
 	.data-title {
 		font-size: 18px;
@@ -738,7 +737,7 @@ a {
 		margin-bottom: 5%;
 	}
 	.data-content{
-		width: 200px
+		width: 250px
 	}
 
 	.student-select{
@@ -770,6 +769,10 @@ a {
 		margin-left: 0;
 	}
 	.last {
-		width: 95%;
+		width: 100%;
+	}
+
+	.data-password{
+		margin-right: 20px;
 	}
 }
