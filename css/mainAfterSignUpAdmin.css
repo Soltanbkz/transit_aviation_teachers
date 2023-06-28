@@ -23,6 +23,7 @@ body {
 .all_page .side_bar {
   width: 20%;
   margin: 20px 0px 20px 20px;
+  z-index: 99;
 }
 
 .all_page .content {
@@ -420,6 +421,7 @@ main .sidebar {
   background-color: white;
   transition: all 1s;
   top: 0;
+  z-index: 99;
 }
 
 .ham {
@@ -433,7 +435,7 @@ main .sidebar {
   -ms-user-select: none;
   user-select: none;
   right: 10px;
-  z-index: 99;
+  z-index: 999;
 }
 
 .hamRotate.active {
@@ -452,25 +454,23 @@ main .sidebar {
   stroke-linecap: round;
 }
 
-.ham3 .top {
-  stroke-dasharray: 40 130;
+.ham6 .top {
+  stroke-dasharray: 40 172;
 }
-.ham3 .middle {
-  stroke-dasharray: 40 140;
+.ham6 .middle {
+  stroke-dasharray: 40 111;
 }
-.ham3 .bottom {
-  stroke-dasharray: 40 205;
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
 }
-.ham3.active .top {
-  stroke-dasharray: 75 130;
-  stroke-dashoffset: -63px;
+.ham6.active .top {
+  stroke-dashoffset: -132px;
 }
-.ham3.active .middle {
-  stroke-dashoffset: -102px;
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
 }
-.ham3.active .bottom {
-  stroke-dasharray: 110 205;
-  stroke-dashoffset: -86px;
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
 }
 
 .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
@@ -513,6 +513,7 @@ main .sidebar {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
+  z-index: 1;
 }
 
 .courses_sectors_images img:hover{
@@ -571,6 +572,7 @@ main .sidebar {
   .ham {
       display: block;
   }
+
   .side_bar_links{
     display: none;
   }
@@ -624,8 +626,6 @@ main .sidebar {
     margin-top: 5%;
     margin-bottom: 5%;
   }
-
-
 
   .training_sectors_h2 {
     margin-left: 10%;

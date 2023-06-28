@@ -329,6 +329,7 @@ input:-webkit-autofill:active {
 .training_sectors_images img {
   width: 400px;
   background-size: cover;
+  z-index: 1;
 }
 
 /* our courses */
@@ -559,6 +560,7 @@ main .sidebar {
   background-color: white;
   transition: all 1s;
   top: 0;
+  z-index: 9;
 }
 
 .ham {
@@ -591,25 +593,23 @@ main .sidebar {
   stroke-linecap: round;
 }
 
-.ham3 .top {
-  stroke-dasharray: 40 130;
+.ham6 .top {
+  stroke-dasharray: 40 172;
 }
-.ham3 .middle {
-  stroke-dasharray: 40 140;
+.ham6 .middle {
+  stroke-dasharray: 40 111;
 }
-.ham3 .bottom {
-  stroke-dasharray: 40 205;
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
 }
-.ham3.active .top {
-  stroke-dasharray: 75 130;
-  stroke-dashoffset: -63px;
+.ham6.active .top {
+  stroke-dashoffset: -132px;
 }
-.ham3.active .middle {
-  stroke-dashoffset: -102px;
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
 }
-.ham3.active .bottom {
-  stroke-dasharray: 110 205;
-  stroke-dashoffset: -86px;
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
 }
 
 .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
@@ -708,6 +708,7 @@ main .sidebar {
 
   .side_bar{
     justify-content: space-between;
+
   }
 
   .all_page{
@@ -734,6 +735,7 @@ main .sidebar {
     height: 60px;
     margin: 0;
     padding-bottom: 1.6%;
+    z-index: 99;
     padding-top: 1%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 2px 2px 20px rgba(0, 0, 0, 0.08);
   }
