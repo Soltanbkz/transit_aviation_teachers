@@ -9,28 +9,32 @@ body {
 *{
 	font-family: 'Rubik', sans-serif !important;
   }
-hr {
-  border: 1px solid #00538E;
-  width: 90%;
-  margin-right: 15%;
-}
-summary {
-  list-style: none;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-details summary::before {
-  content: '';
-  display: flex;
-  background-color: url('img\free-icon-font-angle-down-3916903.png');
-}
-details[open] summary img {
-  transform: rotate(180deg);
-}
-details > summary:first-of-type  {
-  display: flex;
-}
+  .courses_sectors_images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .courses_sectors_images img{
+    width: 100%;
+    border-radius: 20px;
+    background-color: inherit;
+  }
+  
+  .training_sectors_images img{
+    border-radius: 35px;
+  }
+  
+  .training_sectors_images img:hover{
+    box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
+    transition: 500ms;
+  }
+  
+  .courses_sectors_images img:hover{
+    box-shadow: 3px 4px 5px 5px rgba(0,0,0,0.14);
+    transition: 500ms;
+  }
 /* ----------------------------------------- */
 
 /* ALL PAGE */
@@ -198,7 +202,7 @@ main {
   isolation: isolate;
   width: 30%;
   height: 37px;
-  margin-left: 3%;
+  margin-right: 50px;
   background: #DCEAFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -577,7 +581,7 @@ input.add-event-edit:-ms-input-placeholder {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 800;
   letter-spacing: -1px;
   color: #ddd;
@@ -756,28 +760,14 @@ input.add-event-edit:-ms-input-placeholder {
   border-bottom: 1px solid #fff;
 }
 
-
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-  display: block;
-  align-items: center;
+.cview__month-last:hover, .cview__month-next:hover {
+  color: #000 !important;
 }
 
-.orange {
-  color: #FB6D3A;
-}
 
-main .sidebar {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  margin-left: 50px;
+.red{
+  color: #FF5757;
 }
-
 
 .sidebar-logo {
   margin-bottom: 30px;
@@ -798,15 +788,15 @@ main .sidebar {
   border-right: 1px solid #003c97;
   transition: 0.5s;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 30px;
   white-space: nowrap;
   display: none;
-  border: none;
 }
 
 .sidebar a:last-child{
   margin-top: 10px;
 }
+
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -815,9 +805,10 @@ main .sidebar {
   display: block;
 }
 
-.sidebar svg{
+.sidebar img{
   margin-bottom: -5px;
 }
+
 .orange {
   color: #FB6D3A;
 }
@@ -830,6 +821,16 @@ main .sidebar {
 }
 
 
+@media screen and (max-height: 450px) {
+  .sidebar {
+      padding-top: 15px;
+  }
+
+  .sidebar a {
+      font-size: 18px;
+  }
+}
+
 /* ----------------------------------------- */
 
 .calendar__head_adapt {
@@ -841,10 +842,6 @@ main .sidebar {
 }
 
 
-.leave-button{
-  margin-top: 10%;
-}
-
 .leave-button button{
   width: 120px;
   height: 35px;
@@ -852,9 +849,34 @@ main .sidebar {
   background-color: red;
   border: none;
   border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 7%;
 }
 
 
+.send img {
+  user-select: none;
+  /* Запретить выделение текста и изображений */
+  -moz-user-select: none;
+  /* Для поддержки в Firefox */
+  -webkit-user-drag: none;
+  /* Для поддержки в браузерах на основе WebKit */
+  -webkit-user-select: none;
+  /* Для поддержки в браузерах на основе WebKit */
+  -ms-user-select: none;
+  /* Для поддержки в Internet Explorer/Edge */
+  background-color: inherit;
+  width: 35px;
+  margin-top: 2px;
+}
+
+.send {
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+  margin-right: -50px;
+}
 
 /* BURGER MENU */
 
@@ -898,20 +920,25 @@ main .sidebar {
   stroke-linecap: round;
 }
 
-.ham1 .top {
-  stroke-dasharray: 40 139;
+.ham3 .top {
+  stroke-dasharray: 40 130;
 }
-
-.ham1 .bottom {
-  stroke-dasharray: 40 180;
+.ham3 .middle {
+  stroke-dasharray: 40 140;
 }
-
-.ham1.active .top {
-  stroke-dashoffset: -98px;
+.ham3 .bottom {
+  stroke-dasharray: 40 205;
 }
-
-.ham1.active .bottom {
-  stroke-dashoffset: -138px;
+.ham3.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+.ham3.active .middle {
+  stroke-dashoffset: -102px;
+}
+.ham3.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
 }
 
 .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
@@ -922,7 +949,7 @@ main .sidebar {
   display: flex;
   align-items: center;
   margin-left: 10%;
-  height: 8%;
+  margin-top: 8px;
 }
 
 .burger-content-element p a{
@@ -1194,9 +1221,9 @@ main .sidebar {
   }
 
   .form {
-    height: 50px;
-    border-radius: 5px;
-    width: 95% !important;
+    height: 40px;
+    border-radius: 20px;
+    width: 80% !important;
     margin-left: 1%;
   }
 

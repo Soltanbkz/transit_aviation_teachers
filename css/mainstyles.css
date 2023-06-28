@@ -1,28 +1,20 @@
 
-
-.all_page .content {
-  background-color: white;
-  border-radius: 20px;
-  height: 100%;
-  width: 77%;
-}
-
 *{
 	font-family: 'Rubik', sans-serif !important;
   }
 
-.leave-button{
-  margin-top: 10%;
-}
+  .leave-button button{
+    width: 120px;
+    height: 35px;
+    color: #FFFFFF;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 7%;
+  }
 
-.leave-button button{
-  width: 120px;
-  height: 35px;
-  color: #FFFFFF;
-  background-color: red;
-  border: none;
-  border-radius: 10px;
-}
 
 /* ----------------------------------------- */
 
@@ -56,16 +48,43 @@ a {
 
 .side_bar_links {
   margin-top: 30%;
- 
 }
 
-.side_bar_general {
+.courses_sectors_images{
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  background-color: white;
-  width: 100%;
-  border-radius: 20px 0 0 20px;
+  margin-left: 3%;
 }
+
+.courses_sectors_images img{
+  width: 100%;
+  border-radius: 20px;
+  background-color: inherit;
+}
+
+.side_bar_general .side_bar_text a:hover{
+}
+
+.side_bar_text a:hover{
+  color: #e9e9e9;
+  transition: 500ms;
+}
+
+.training_sectors_images img{
+  border-radius: 35px;
+}
+
+.training_sectors_images img:hover{
+  box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
+  transition: 500ms;
+}
+
+.courses_sectors_images img:hover{
+  box-shadow: 3px 4px 5px 5px rgba(0,0,0,0.14);
+  transition: 500ms;
+}
+
 
 .side_bar_general p a {
   color: #FB6D3A;
@@ -254,20 +273,25 @@ main .sidebar {
   stroke-linecap: round;
 }
 
-.ham1 .top {
-  stroke-dasharray: 40 139;
+.ham3 .top {
+  stroke-dasharray: 40 130;
 }
-
-.ham1 .bottom {
-  stroke-dasharray: 40 180;
+.ham3 .middle {
+  stroke-dasharray: 40 140;
 }
-
-.ham1.active .top {
-  stroke-dashoffset: -98px;
+.ham3 .bottom {
+  stroke-dasharray: 40 205;
 }
-
-.ham1.active .bottom {
-  stroke-dashoffset: -138px;
+.ham3.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+.ham3.active .middle {
+  stroke-dashoffset: -102px;
+}
+.ham3.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
 }
 
 .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
@@ -278,6 +302,7 @@ main .sidebar {
   display: flex;
   align-items: center;
   margin-left: 10%;
+  margin-top: 8px;
 }
 
 .burger-content-element p a{
@@ -302,10 +327,6 @@ main .sidebar {
 
 
 @media screen and (min-width:601px) and (max-width:1100px) {
-  .content{
-    margin-left: 90px !important;
-    width: 100% !important;
-  }
   .sidebar-logo{
     display: flex;
     align-items: center;
@@ -325,6 +346,12 @@ main .sidebar {
 
   .sidebar{
     display: block;
+  }
+
+  .all_page .content{
+    margin-left: 90px;
+    width: 100%;
+    margin-right: 10px;
   }
 
   .sidebar-logo p {
@@ -386,7 +413,6 @@ main .sidebar {
   }
 
   .all_page .side_bar {
-    position: fixed;
     display: flex;
     align-items: center;
     width: 100%;

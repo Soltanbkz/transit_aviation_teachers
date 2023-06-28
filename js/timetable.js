@@ -158,8 +158,6 @@ function CalendarApp(date) {
     
     this.openDayWindow(dayDate);
     
-  
-    
   };
   CalendarApp.prototype.openDayWindow = function(date){
     
@@ -178,7 +176,7 @@ function CalendarApp(date) {
        this.addDayEventEle.style.display = "inline";
     }
     this.addDayEventEle.setAttribute("data-date", day);
-    
+
     var eventsToday = this.showEventsByDay(day);
     if ( !eventsToday ) {
       _dayTopbarText += "no ";
@@ -468,11 +466,11 @@ function CalendarApp(date) {
       return _hour + ":" + _min;
       
     }
-
+  
     if (options.indexOf(input) === -1) {
       return options[0];
     }
-
+    
     return input;
   };
   CalendarApp.prototype.resetAddEventBox = function(){

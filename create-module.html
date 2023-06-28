@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
-  <link rel="stylesheet" type="text/css" href="css/aboutStudent.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/create-module.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mainstyles.css">
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
@@ -36,7 +38,7 @@
               class="line bottom"
               d="m 70,67 h -40 c 0,0 -3.680675,0.737051 -3.660714,-3.517857 0.02541,-5.415597 3.391687,-10.357143 10.982142,-10.357143 4.048418,0 17.88928,0.178572 23.482143,0.178572 0,2.563604 2.451177,3.403635 4.642857,3.392857 2.19168,-0.01078 4.373905,-1.369814 4.375,-3.392857 0.0011,-2.023043 -1.924401,-2.589191 -4.553571,-4.107143 -2.62917,-1.517952 -4.196429,-1.799562 -4.196429,-3.660714 0,-1.861153 2.442181,-3.118811 4.196429,-3.035715 1.754248,0.0831 4.375,0.890841 4.375,3.125 2.628634,0 6.160714,0.267857 6.160714,0.267857 l -0.178571,-2.946428 10.178571,0 -10.178571,0 v 6.696428 l 8.928571,0 -8.928571,0 v 7.142858 l 10.178571,0 -10.178571,0" />
       </svg>
-
+      
       <div class="burger-content" style="left: -100%;">
         <div class="burger-content-element">
           <img width="24" src="img/icons8-главная-48.png" alt="">
@@ -49,6 +51,7 @@
         <div class="burger-content-element">
           <img width="24" src="img/icons8-студент-48.png" alt="">
           <p><a href="student.html">Студенты</a></p>
+        </div>
         </div>
         <div class="burger-content-element">
           <img width="24" src="img/icons8-настройки-48.png" alt="">
@@ -143,109 +146,76 @@
       </a>
     </div>
 
-    <!-- -->
+    <!--content -->
     <div class="content">
-
-      <h2 class="h2">Личный кабинет</h2>
-
-      <div class="main-content">
-        <div class="student-info">
-          <div class="student-img">
-            <img src="./img/free-icon-user-profile-5675059.png" alt="" />
-          </div>
-          <div class="student-data">
-            <span class="data-title">Имя:</span>
-            <div class="data-content">
-              <input type="text" />
-            </div>
-          </div>
-          <div class="student-data">
-            <span class="data-title">Фамилия:</span>
-            <div class="data-content">
-              <input type="text" />
-            </div>
-          </div>
-          <div class="student-data">
-            <span class="data-title">Поток:</span>
-            <div class="data-content">
-              <input type="number" />
-            </div>
-          </div>
-          <div class="student-data">
-            <span class="data-title">Номер телефона:</span>
-            <div class="data-content">
-              <input type="text" pattern="[0-9]{12}">
-            </div>
-          </div>
-          <div class="student-data">
-            <span class="data-title">Почта:</span>
-            <div class="data-content">
-              <input type="email" />
-            </div>
-          </div>
-          <div class="student-data last">
-            <span class="data-title">Последний вход:</span>
-            <div class="data-content">
-              <input type="date" placeholder="" />
-            </div>
-          </div>
-          <div class="student-btns">
-            <button class="save">
-              Сохранить
-            </button>
-            <button class="del">
-              Удалить студента
-            </button>
-          </div>
-        </div>
-        <div class="info-types">
-          <div class="info-select">
-            <div class="student-select">
-              <span class="data-title">Тип курса:</span>
-              <div class="data-content select">
-                <select>
-                  <option value="option1" selected>Авиационные</option>
-                  <option value="option2">Промышленные</option>
-                </select>
-              </div>
-            </div>
-            <div class="student-select">
-              <span class="data-title">Выбор курса:</span>
-              <div class="data-content select">
-                <select>
-                  <option value="option1" selected>Virtual Learning</option>
-                  <option value="option2">Virtual Learning</option>
-                  <option value="option3">Virtual Learning</option>
-                  <option value="option4">Virtual Learning</option>
-                </select>
-              </div>
-            </div>
-            <button class="btn firstbtn">Добавить</button>
-          </div>
-          <div class="container">
-            <h4 class="password-title">Изменить пароль</h4>
-            <div class="student-select">
-              <div class="data-content data-password">
-                <input type="text" placeholder="Новый пароль" />
-              </div>
-            </div>
-            <div class="student-select">
-              <div class="data-content data-password">
-                <input type="text" placeholder="Повторите пароль" />
-              </div>
-            </div>
-            <button class="btn lastbtn">
-              Изменить пароль
-            </button>
-          </div>
+      <div class="pagename">
+        <h2>Редактирование модуля</h2>
+        <div class="litletitle">
+          <a href="coursesAfterSignUp.html"><b>Мои курсы </b></a>
         </div>
       </div>
 
-      <img src="img/next-button.svg" alt="" class="back" />
-    </div>
-  </div>
+      <div class="createModul">
 
-<script src="js/burger.js"></script>
+        <div class="content-header">
+          <p>Выберите курс</p>
+          <div class="choisecourse">
+            <img src="img/risunok5 6.png" alt="" />
+            <select class="select" name="" id="">
+              <option value="">Курс</option>
+              <option value="">Курс 1</option>
+              <option value="">Курс 2</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="lefside">
+          <p>Добавить название</p>
+          <input type="text" class="modulinput">
+
+          <p>О модуле:</p>
+          <textarea type="text" class="modulinput biginput"></textarea>
+        </div>
+
+        <div class="rightside">
+          <p>Назначить основного преподавателя</p>
+          <div class="choisecourse select23">
+            <select name="" id="" class="select">
+              <option value="">Выбрать преподавателя</option>
+              <option value="">Выбрать преподавателя 1</option>
+              <option value="">Выбрать преподавателя 2</option>
+              <option value="">Выбрать преподавателя 3</option>
+            </select>
+          </div>
+
+          <p class="teachers">Дополнительные преподаватели</p>
+          <div class="choisecourse select23">
+            <select name="" id="" class="select">
+              <option value="">Выбрать преподавателя</option>
+              <option value="">Выбрать преподавателя 1</option>
+              <option value="">Выбрать преподавателя 2</option>
+              <option value="">Выбрать преподавателя 3</option>
+            </select>
+          </div>
+
+          <div class="radio">
+            <form>
+              <input id="yes" type="radio" name="question">
+              <label for="yes">Запретить дополнительным преподавателям редактировать модули и уроки</label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="save">Сохранить</button>
+        <a href="addVideo.html"><button class="addlessons">Добавить урок к модулю</button> </a>
+      </div>
+
+      <div class="backPage"><img src="img/buttonbagk.png" alt="" /></div>
+    </div>
+
+
+
 </body>
 
 </html>

@@ -21,15 +21,42 @@ body {
 .all_page .side_bar {
 	width: 20%;
 	margin: 20px 0px 20px 20px;
-	position: fixed;
 }
+
+.courses_sectors_images{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 3%;
+  }
+
+  .courses_sectors_images img{
+	width: 100%;
+	border-radius: 20px;
+	background-color: inherit;
+  }
+
+  
+  .training_sectors_images img{
+	border-radius: 35px;
+  }
+  
+  .training_sectors_images img:hover{
+	box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
+	transition: 500ms;
+  }
+  
+  .courses_sectors_images img:hover{
+	box-shadow: 3px 4px 5px 5px rgba(0,0,0,0.14);
+	transition: 500ms;
+  }
 
 .all_page .content {
 	background-color: white;
 	border-radius: 20px;
 	height: 100%;
 	width: 77%;
-	margin: 20px 20px 20px 20%;
+	margin: 20px;
 }
 
 
@@ -66,7 +93,7 @@ a {
 	display: flex;
 	align-items: center;
 	background-color: white;
-	width: 110%;
+	width: 120% !important;
 	border-radius: 20px 0 0 20px;
 }
 
@@ -167,7 +194,7 @@ a {
 	background: #DCEAFF;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 20px;
-	margin-right: -15%;
+	margin-right: 50px;
   }
 
   /* label styling */
@@ -306,15 +333,15 @@ a {
 	color: #0067F5;
 	font-weight: bold;
 	box-shadow: 4px 4px 13px -1px rgba(0, 0, 0, 0.25);
-	padding:2% 3%;
+	padding: 10px;
 	border-radius: 10px;
 	border: none;
+	outline: none;
 }
 
 option {
 	margin-top: 3%;
 }
-
 
 .course-about {
 	background-color: #fff;
@@ -463,22 +490,80 @@ option {
 	margin-right: 30px;
 }
 
-
-
 .leave-button button{
-    width: 120px;
-    height: 35px;
-    color: #FFFFFF;
-    background-color: red;
-    border: none;
-    border-radius: 10px;
+	width: 120px;
+	height: 35px;
+	color: #FFFFFF;
+	background-color: red;
+	border: none;
+	border-radius: 10px;
+	position: absolute;
+	bottom: 20px;
+	left: 7%;
+  }
+
+  .module-arrow{
+	display: none;
+  }
+
+  .send img {
+	user-select: none;
+	/* Запретить выделение текста и изображений */
+	-moz-user-select: none;
+	/* Для поддержки в Firefox */
+	-webkit-user-drag: none;
+	/* Для поддержки в браузерах на основе WebKit */
+	-webkit-user-select: none;
+	/* Для поддержки в браузерах на основе WebKit */
+	-ms-user-select: none;
+	/* Для поддержки в Internet Explorer/Edge */
+	background-color: inherit;
+	width: 35px;
+	margin-top: 2px;
+  }
+
+  .send {
+	background-color: initial;
+	border: none;
+	cursor: pointer;
+	margin-right: -100px;
+  }
+
+@media screen and (min-width:601px) and (max-width:1100px){
+	.main-content{
+		display: block;
+		box-shadow: none;
+	}
+
+	.course-info{
+		width: 100%;
+		padding: 0;
+	}
+
+	.course-btns{
+		width: 100%;
+	}
+
+	.courseEdit-buttons{
+		margin-top: 10%;
+	}
 }
 
-@media (max-width:700px) {
+@media (max-width:600px) {
 
   .all_page .content {
     width: 100% !important;
     margin: 80px 0 0 !important;
+  }
+
+  .course-type select{
+	width: 100%;
+	padding: 10px;
+  }
+
+  .main_header{
+	padding: 0;
+
   }
 
   .content-header {
@@ -488,21 +573,30 @@ option {
   	width: 90%;
   	margin-bottom: 5%;
   }
+
   .form {
   	width: 80%;
   }
 
-  .course-type select {
-  	width: 80%;
-  }
+  .main-content{
+	display: block;
+	box-shadow: none;
+	}
 
-  .course-btns {
-  	width: 100%;
-  }
+	.side_bar{
+		position: fixed;
+	}
 
- 
-  .course-info {
-  	padding: 3%;
-  	width: 100%;
-  }
+.course-info{
+	width: 100%;
+	padding: 0;
+}
+
+.course-btns{
+	width: 100%;
+}
+
+.courseEdit-buttons{
+	margin-top: 10%;
+}
  }

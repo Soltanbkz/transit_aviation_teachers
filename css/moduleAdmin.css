@@ -22,6 +22,34 @@ body {
     margin: 20px 0px 20px 20px;
 }
 
+.courses_sectors_images{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.courses_sectors_images img{
+  width: 100%;
+  border-radius: 20px;
+  background-color: inherit;
+}
+
+
+.training_sectors_images img{
+  border-radius: 35px;
+}
+
+.training_sectors_images img:hover{
+  box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
+  transition: 500ms;
+}
+
+.courses_sectors_images img:hover{
+  box-shadow: 3px 4px 5px 5px rgba(0,0,0,0.14);
+  transition: 500ms;
+}
+
 .all_page .content {
     background-color: white;
     border-radius: 20px;
@@ -32,19 +60,17 @@ body {
 
 /* ----------------------------------------- */
 
-.leave-button{
-    margin-top: 10%;
-}
-
 .leave-button button{
-    width: 120px;
-    height: 35px;
-    color: #FFFFFF;
-    background-color: red;
-    border: none;
-    border-radius: 10px;
+  width: 120px;
+  height: 35px;
+  color: #FFFFFF;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 7%;
 }
-
 /* SIDE BAR */
 
 .side_bar {
@@ -498,20 +524,25 @@ h3 {
     stroke-linecap: round;
   }
   
-  .ham1 .top {
-    stroke-dasharray: 40 139;
+  .ham3 .top {
+    stroke-dasharray: 40 130;
   }
-  
-  .ham1 .bottom {
-    stroke-dasharray: 40 180;
+  .ham3 .middle {
+    stroke-dasharray: 40 140;
   }
-  
-  .ham1.active .top {
-    stroke-dashoffset: -98px;
+  .ham3 .bottom {
+    stroke-dasharray: 40 205;
   }
-  
-  .ham1.active .bottom {
-    stroke-dashoffset: -138px;
+  .ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+  }
+  .ham3.active .middle {
+    stroke-dashoffset: -102px;
+  }
+  .ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
   }
   
   .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
@@ -522,6 +553,7 @@ h3 {
     display: flex;
     align-items: center;
     margin-left: 10%;
+    margin-top: 8px;
   }
   
   .burger-content-element p a{
@@ -601,9 +633,6 @@ h3 {
   }
   
   @media (max-width:600px) {
-    .course{
-      margin-left: 20px;
-    }
     .ham {
         display: block;
     }
@@ -656,7 +685,7 @@ h3 {
     .card p{
         font-size: 14px;
     }
-    
+
     .card h3{
         font-size: 16px;
     }
@@ -667,6 +696,10 @@ h3 {
   
     .courses_sectors_images{
       display: grid;
+    }
+
+    .course{
+      margin-left: 20px;
     }
   
   }

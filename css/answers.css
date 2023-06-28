@@ -23,6 +23,33 @@ body {
     z-index: 100;
 }
 
+.courses_sectors_images{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3%;
+  }
+  
+  .courses_sectors_images img{
+    width: 100%;
+    border-radius: 20px;
+    background-color: inherit;
+  }
+  
+  .training_sectors_images img{
+    border-radius: 35px;
+  }
+  
+  .training_sectors_images img:hover{
+    box-shadow: 5px 5px 4px 3px rgba(0,0,0,0.14);
+    transition: 500ms;
+  }
+  
+  .courses_sectors_images img:hover{
+    box-shadow: 3px 4px 5px 5px rgba(0,0,0,0.14);
+    transition: 500ms;
+  }
+  
 .all_page .content {
     background-color: white;
     border-radius: 20px;
@@ -489,10 +516,6 @@ input:-webkit-autofill:active {
     margin-left: 4%;
 }
 
-.leave-button{
-    margin-top: 10%;
-}
-
 .leave-button button{
     width: 120px;
     height: 35px;
@@ -500,7 +523,10 @@ input:-webkit-autofill:active {
     background-color: red;
     border: none;
     border-radius: 10px;
-}
+    position: absolute;
+    bottom: 20px;
+    left: 7%;
+  }
 
 #button svg{
     margin-left: 10px;
@@ -640,7 +666,9 @@ input:-webkit-autofill:active {
   .sidebar-logo p {
     margin-left: 30px;
   }
-  
+  .sidebar img {
+	margin-bottom: -5px;
+  }
   .sidebar {
     height: 100%;
     width: 85px;
@@ -652,7 +680,7 @@ input:-webkit-autofill:active {
     border-right: 1px solid #003c97;
     transition: 0.5s;
     overflow-x: hidden;
-    padding-top: 60px;
+	padding-top: 30px;
     white-space: nowrap;
     display: none;
   }
@@ -724,20 +752,25 @@ input:-webkit-autofill:active {
     stroke-linecap: round;
   }
   
-  .ham1 .top {
-    stroke-dasharray: 40 139;
+  .ham3 .top {
+    stroke-dasharray: 40 130;
   }
-  
-  .ham1 .bottom {
-    stroke-dasharray: 40 180;
+  .ham3 .middle {
+    stroke-dasharray: 40 140;
   }
-  
-  .ham1.active .top {
-    stroke-dashoffset: -98px;
+  .ham3 .bottom {
+    stroke-dasharray: 40 205;
   }
-  
-  .ham1.active .bottom {
-    stroke-dashoffset: -138px;
+  .ham3.active .top {
+    stroke-dasharray: 75 130;
+    stroke-dashoffset: -63px;
+  }
+  .ham3.active .middle {
+    stroke-dashoffset: -102px;
+  }
+  .ham3.active .bottom {
+    stroke-dasharray: 110 205;
+    stroke-dashoffset: -86px;
   }
   
   .burger-content .burger-content-element:first-child, .burger-content-element-leave:last-child{
@@ -748,6 +781,7 @@ input:-webkit-autofill:active {
     display: flex;
     align-items: center;
     margin-left: 10%;
+    margin-top: 8px;
   }
   
   .burger-content-element p a{
@@ -939,8 +973,13 @@ input:-webkit-autofill:active {
         justify-content: space-evenly;
         align-items: center;
         margin-top: 10px;
+        margin-left: -50px;
     }
     .comment-text {
         width: 100%;
+        margin-left: -50px;
+    }
+    .reply{
+        margin-left: -50px;
     }
   }
