@@ -153,7 +153,6 @@ a {
 .side_bar_settings {
   display: flex;
   align-items: center;
-  margin-top: 2%;
 }
 
 /* SIDEBAR */
@@ -1375,4 +1374,37 @@ main .sidebar {
 .sidebar-logo {
   position: relative;
   right: 14%;
+}
+
+.search-footer {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+
+.search-footer input {
+  width: 350px;
+  border-radius: 30px;
+  border-color: #1b9bee;
+  padding: 19px 0 19px 25px;
+  outline: none;
+}
+
+.search-footer button {
+  outline: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  background-color: #1b9bee;
+  padding: 10px;
+  position: absolute;
+  right: 4px;
+  cursor: pointer;
+  transition: .3s;
+  color: white;
+  font-size: 15px;
 }
