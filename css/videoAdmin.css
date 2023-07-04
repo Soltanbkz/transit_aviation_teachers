@@ -456,9 +456,10 @@ embed {
     border: none;
     border-radius: 10px;
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 7%;
   }
+
 .red {
     color: #FF5757;
 }
