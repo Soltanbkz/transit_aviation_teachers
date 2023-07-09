@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
   <link rel="stylesheet" type="text/css" href="css/coursesAfterSignUpAdmin.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/140219e2b5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -125,7 +126,6 @@
     <a href="student.html">
       <img  width="24" src="img/icons8-студент-48.png" alt=""><span class="sidebar_text">Студенты</span></a>
     </a><br>
-
     <a href="profileSettingsAdmin.html">
       <img width="24" src="img/icons8-настройки-48.png" alt="">
       <span class="sidebar_text">Настройки</span></a>
@@ -147,102 +147,62 @@
 
       <!-- search-input -->
 
-      <!-- Training sectors -->
-
-      <div class="training_sectors">
-
-        <h2 class="training_sectors_h2">Курсы</h2>
-
-        <!-- training_sectors_images -->
-
-        <div class="training_sectors_images">
-
-          <!-- training_sectors_aviation -->
-
-          <div class="training_sectors_aviation">
-
-            <div class="aviation-img">
-
-              
-              <div class="course-info">
-                <div class="course-type">
-                  <h3>Авиационные</h3>
-                </div>
-                <button class="course-minutes">
-                  83 min
-                </button>
-              </div>
-
-              <img src="img/Mask Group.png" alt="">
-
-              <div class="aviation-text">
-                <p>Learning how to create simple Swift <br> applications in 8 lessons</p>
-              </div>
-            </div>
-
-          </div>
-
-          <!-- training_sectors_industrial -->
-
-          <div class="training_sectors_indusrial">
-
-            <div class="aviation-img">
-
-              <div class="course-info">
-                <div class="course-type">
-                  <h3>Промышленные</h3>
-                </div>
-                <button class="course-minutes">
-                  90 min
-                </button>
-              </div>
-
-              <img src="img/Mask Group2.png" alt="">
-
-              <div class="aviation-text-industry">
-                <p>Learning how to create simple Swift <br> applications in 8 lessons</p>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="training_sectors_indusrial">
-
-            <div class="aviation-img">
-
-              <div class="course-info">
-                <div class="course-type">
-                  <h3>Промышленные</h3>
-                </div>
-                <button class="course-minutes">
-                  90 min
-                </button>
-              </div>
-
-              <img src="img/Mask Group2.png" alt="">
-
-              <div class="aviation-text-industry">
-                <p>Learning how to create simple Swift <br> applications in 8 lessons</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
         <!--courses-->
 
         <div class="our_courses">
 
-          <h2 class="training_sectors_h2">Потоки</h2>
+          <div class="text-courses">
+
+          <h2 class="training_sectors_h2">Курсы</h2>
+
+          
+        <div class="btn-container">
+          <button class="expand-btn">Расширить</button>
+        </div>
+
+        </div> 
 
           <div class="flows">
             <div class="card">
               <div class="img">
               </div>
             
+              <div class="text">
+                <p class="h3"> Авиационные </p>
+                <p class="p"> 5 поток </p>
+                <div class="icon-box">
+                  <a href="moduleAdmin.html" class="span">120 уроков
+                </a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+              </div>
+            
+              <div class="text">
+                <p class="h3"> Авиационные </p>
+                <p class="p"> 5 поток </p>
+                <div class="icon-box">
+                  <a href="moduleAdmin.html" class="span">120 уроков
+                </a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+              </div>
+            
+              <div class="text">
+                <p class="h3"> Авиационные </p>
+                <p class="p"> 5 поток </p>
+                <div class="icon-box">
+                  <a href="moduleAdmin.html" class="span">120 уроков
+                </a></div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img">
+              </div>
+
               <div class="text">
                 <p class="h3"> Авиационные </p>
                 <p class="p"> 5 поток </p>
@@ -262,7 +222,40 @@
                 </a></div>
               </div>
             </div>
-            <div class="card">
+            <div class="card hidden expandable">
+              <div class="img">
+              </div>
+              <div class="text">
+                <p class="h3">Промышленные</p>
+                <p class="p">6 поток</p>
+                <div class="icon-box">
+                  <a href="moduleAdmin.html" class="span">120 уроков
+                </a></div>
+              </div>
+            </div>
+            <div class="card hidden expandable">
+              <div class="img">
+              </div>
+              <div class="text">
+                <p class="h3">Промышленные</p>
+                <p class="p">6 поток</p>
+                <div class="icon-box">
+                  <a href="moduleAdmin.html" class="span">120 уроков
+                </a></div>
+              </div>
+            </div>
+            <div class="card hidden expandable">
+              <div class="img">
+              </div>
+              <div class="text">
+                <p class="h3">Промышленные</p>
+                <p class="p">6 поток</p>
+                <div class="icon-box">
+                  <a href="moduleAdmin.html" class="span">120 уроков
+                </a></div>
+              </div>
+            </div>
+            <div class="card hidden expandable">
               <div class="img">
               </div>
               <div class="text">
@@ -282,7 +275,26 @@
   </div>
   </div>
   
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+</script>
   <script src="js/side-bar.js"></script>
+  <script>
+    $(document).ready(function(){
+    let hiddenRow = $(".expandable");
+    $(".expand-btn").click(function(){
+        hiddenRow.toggleClass("hidden");
+        if (hiddenRow.is(":visible")){
+            $(".expand-btn").html("Уменьшить");
+        }
+        else{
+            $(".expand-btn").html("Расширить");
+        }
+    })
+});
+  </script>
+  
 </body>
 
 </html>
+

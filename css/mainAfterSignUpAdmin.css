@@ -8,7 +8,7 @@ body {
 }
 
 *{
-    font-family: 'Rubik', sans-serif !important;
+	font-family: 'Rubik', sans-serif !important;
   }
 /* ----------------------------------------- */
 
@@ -32,8 +32,8 @@ body {
   height: 100%;
   width: 77%;
   margin: 20px;
-  padding-bottom: 20px;
 }
+
 .leave-button button{
   width: 120px;
   height: 35px;
@@ -118,7 +118,6 @@ a {
   margin-top: 25%;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10%;
 }
 
 .support-img img {
@@ -133,15 +132,15 @@ a {
 }
 
 .side_bar_student{
-    display: flex;
-    align-items: center;
-    margin-top: 2%;
+	display: flex;
+	align-items: center;
+	margin-top: 2%;
 }
 
 .side_bar_answers{
-    display: flex;
-    align-items: center;
-    margin-top: 2%;
+	display: flex;
+	align-items: center;
+	margin-top: 2%;
 }
 
 /* SEARCH INPUT */
@@ -153,7 +152,6 @@ a {
   gap: 20px;
   margin-left: 3%;
 }
-
 
 .training_sectors_images img{
   border-radius: 35px;
@@ -319,6 +317,11 @@ input:-webkit-autofill:active {
 .training_sectors_images {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+
+.training_sectors_images .rel{
+  width: 400px;
 }
 
 /* training_sectors_images img style */
@@ -364,7 +367,7 @@ input:-webkit-autofill:active {
   margin-bottom: 30px;
 }
 .sidebar img {
-    margin-bottom: -5px;
+	margin-bottom: -5px;
   }
 .sidebar-logo p {
   margin-left: 30px;
@@ -508,17 +511,17 @@ main .sidebar {
 .courses_sectors_images img{
   width: 90%;
   position: relative;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    transition: 1s;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
   z-index: 1;
 }
 
 .courses_sectors_images img:hover{
-    border-radius: 10em;
+	border-radius: 10em;
 }
 
 .aviation-text{
@@ -654,10 +657,6 @@ backdrop-filter: blur(18px);
     display: none;
   }
 
-  .support-img{
-    display: none;
-  }
-
   body{
     background-color: #fff;
   }
@@ -738,4 +737,10 @@ backdrop-filter: blur(18px);
     margin-right: auto;
     display: block;
   }
+}
+
+.overflow{
+  overflow-x: scroll;
+  overflow-y:inherit;
+  white-space: nowrap;
 }
